@@ -20,23 +20,27 @@ class DataProcessor:
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         server_socket.bind((self.host, self.port))
         print('Listening on {}:{}'.format(self.host, self.port))
-        t = threading.Thread(target=self.process, args=(server_socket,))
+        t = threading.Thread(target=self.__get, args=(server_socket,))
         t.start()
 
-    def process(self, server_socket):
+    def __get(self, server_socket):
         while True:
             data, addr = server_socket.recvfrom(1024)
             processed_data = self.process_func(data)
             self.queue.put(processed_data)
 
-    def get_processed_data(self):
-        return self.queue.get()
+    def get_data(self):
+        try:
+            item = self.queue.get(block=False)
+            return item
+        except queue.Empty:
+            pass
 
 
 if __name__ == '__main__':
     # read configuration from file
     config = configparser.ConfigParser()
-    config.read('../config.ini')
+    config.read('../port.ini')
 
     # create data processors for each data source
     processors = []

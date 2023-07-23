@@ -5,13 +5,13 @@ import atexit
 
 def send_eye_data(eye_socket):
     while True:
-        eye_data = b'eye tracking data'
+        eye_data = b'200, 200'
         eye_socket.sendto(eye_data, ('localhost', 8001))
         time.sleep(0.1)
 
 def send_scene_data(scene_socket):
     while True:
-        scene_data = b'scene parameter data'
+        scene_data = b'100, 200, 110, 210, 3, 12'
         scene_socket.sendto(scene_data, ('localhost', 8002))
         time.sleep(0.5)
 

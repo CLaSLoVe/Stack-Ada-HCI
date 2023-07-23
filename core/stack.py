@@ -13,8 +13,7 @@ class Stack:
     def get(self, data):
         tag, data = data
         if tag == 'aoi':
-            panels = aoi2panels(data)
-            for panel in panels:
+            for panel in data:
                 self.stack[panel] = self.actual[panel]
         elif tag == 'par':
             self.actual.update(data)
