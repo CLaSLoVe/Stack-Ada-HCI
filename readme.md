@@ -1,4 +1,4 @@
-# Stack ada HCI
+# Stack ada HCI (stack-based adaptive human-computer interaction system) 🧑‍💻💻
 
 Stack ada HCI is a stack-based adaptive human-computer interaction system. This repository builds an abstract architecture for human-computer interaction systems that estimates perception bias by stacking human perception states. Perception information is estimated through eye-tracking coordinates. The configuration files include `aois.ini`:
 
@@ -35,9 +35,9 @@ def process_scene_parameter_data(data):
     return 0
 ```
 
-The architecture estimates the perception bias of a person by using eye-tracking coordinates and scene state data with a variable sampling rate. The architecture is precise and fast and can be configured by the user. This project is released under the MIT license.
+The architecture estimates the perception bias of a person by using eye-tracking coordinates and scene state data with a variable sampling rate. The architecture is precise and fast and can be configured by the user. This project is released under the MIT license. 🚀👨‍👩‍👧‍👦📝
 
-## Getting Started
+## Getting Started 🚀
 
 To get started with Stack ada HCI, you need to have Python installed on your machine. Clone the repository to your local machine and run the following command:
 
@@ -49,12 +49,12 @@ python test/server_send.py
 python main.py
 ```
 
-This will start the test script and the system, and you can then start configuring it according to your needs.
+This will start the test script and the system, and you can then start configuring it according to your needs. 🏃‍♀️🏃‍♂️💻
 
-## Contributing
+## Contributing 🤝
 
-Contributions are welcome and appreciated. Please fork the repository and create a pull request with your changes. 
+Contributions are welcome and appreciated. Please fork the repository and create a pull request with your changes. 🙌🤗🎉
 
-## License
+## License 📝
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details. 📜🔒👍
