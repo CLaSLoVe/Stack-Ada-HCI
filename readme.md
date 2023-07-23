@@ -11,7 +11,7 @@ height = 200
 panels = Panel1, Panel2
 ```
 
-and `config.ini`:
+and `port.ini`:
 
 ```
 [eye_tracking]
@@ -29,10 +29,10 @@ It also includes `usr_func.py`:
 
 ```python
 def process_eye_tracking_data(data):
-    return 0
+    return ...
 
 def process_scene_parameter_data(data):
-    return 0
+    return ...
 ```
 
 The architecture estimates the perception bias of a person by using eye-tracking coordinates and scene state data with a variable sampling rate. The architecture is precise and fast and can be configured by the user. This project is released under the MIT license. 🚀👨‍👩‍👧‍👦📝
